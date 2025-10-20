@@ -9,7 +9,8 @@ import 'server.dart';
 /// methods and delegates the actual HTTP work to [InspectorServer].
 class SqliteInspector {
   static InspectorServer? _server;
-  // Override del directorio de bases de datos, útil para tests en PC.
+
+  /// Override del directorio de bases de datos, útil para tests en PC.
   static Directory? _dbDirOverride;
 
   /// Start the inspector server.
@@ -29,7 +30,7 @@ class SqliteInspector {
     // environments. If discovery fails, fallback to a temporary directory.
     final pkg = guessPackageName() ?? 'unknown';
 
-    // If a dbDirOverride is provided (tests), use it.
+    /// If a dbDirOverride is provided (tests), use it.
     _dbDirOverride = (dbDirOverride != null) ? Directory(dbDirOverride) : null;
 
     Directory dbDir;
@@ -57,8 +58,8 @@ class SqliteInspector {
   /// Whether the inspector is currently running.
   static bool get isRunning => _server != null;
 
-  // Detect a reasonable database directory for the given package name.
-  // If tests provided an override via [_dbDirOverride], return that.
+  /// Detect a reasonable database directory for the given package name.
+  /// If tests provided an override via [_dbDirOverride], return that.
   static Directory detectDbDir(String pkg) {
     if (_dbDirOverride != null) return _dbDirOverride!;
 

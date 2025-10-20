@@ -1,6 +1,7 @@
-/// Support for doing something awesome.
+/// Public library for sqlite_inspector.
 ///
-/// More dartdocs go here.
+/// Import `package:sqlite_inspector/sqlite_inspector.dart` to use:
+/// - SqliteInspector
 library;
 
 export 'src/sqlite_inspector.dart' show SqliteInspector;

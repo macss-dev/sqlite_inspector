@@ -1,22 +1,28 @@
 name: sqlite_inspector
 description: Dev-only HTTP inspector for on-device SQLite (debug)
-version: 0.0.1
+version: 0.0.2
 
 repository: https://github.com/macss-dev/sqlite_inspector
 homepage: https://github.com/macss-dev/sqlite_inspector
 issue_tracker: https://github.com/macss-dev/sqlite_inspector/issues
-documentation: https://github.com/macss-dev/sqlite_inspector/latest
+documentation: https://pub.dev/documentation/sqlite_inspector/latest
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.16.0"
 
 dependencies:
+  flutter:
+      sdk: flutter
   sqlite3: ^2.9.3
   sqlite3_flutter_libs: ^0.5.40
 
 dev_dependencies:
-  lints: ^6.0.0
+  flutter_lints: ^6.0.0
   test: ^1.25.6
+
+platforms:
+  android:
 
 topics:
   - sqlite

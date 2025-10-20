@@ -1,4 +1,5 @@
 [![pub package](https://img.shields.io/pub/v/sqlite_inspector.svg)](https://pub.dev/packages/sqlite_inspector)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # sqlite_inspector
 

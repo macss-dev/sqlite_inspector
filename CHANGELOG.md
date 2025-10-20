@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format loosely follows [Keep a Changelog](https://keepachangelog.com/)
 and the project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.0.2] - 2025-10-20
+### Fixed
+- Mark the package as Flutter (`flutter` SDK + `flutter` dependency) so pub.dev analyzes it correctly.
+- Add public API docs and analysis options.
+
 ## [0.0.1] - 2025-10-19
 ### Added
 - Initial release of **sqlite_inspector**.
