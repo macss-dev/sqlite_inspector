@@ -1,6 +1,6 @@
 name: sqlite_inspector
 description: Dev-only HTTP inspector for on-device SQLite (debug)
-version: 0.0.2
+version: 0.0.3
 
 repository: https://github.com/macss-dev/sqlite_inspector
 homepage: https://github.com/macss-dev/sqlite_inspector
