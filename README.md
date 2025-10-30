@@ -30,16 +30,53 @@
 In your `pubspec.yaml`:
 
 ```yaml
-dependencies:
-  sqlite_inspector: ^0.0.1
-````
+dev_dependencies:
+  sqlite_inspector: ^0.0.3
+```
 
 Or from the command line:
 
 ```bash
-dart pub add sqlite_inspector
-dart pub get
+flutter pub add dev:sqlite_inspector
+flutter pub get
 ```
+
+### ⚠️ Version Compatibility Warning
+
+**IMPORTANT**: `sqlite_inspector` requires `sqlite3_flutter_libs: ^0.5.40` or higher. If your app uses an older version of `sqlite3_flutter_libs`, you may encounter Gradle build errors.
+
+**Required dependencies:**
+
+```yaml
+dependencies:
+  sqlite3_flutter_libs: ^0.5.40  # Required version
+
+dev_dependencies:
+  sqlite_inspector: ^0.0.3
+```
+
+#### Version Compatibility Matrix
+
+| `sqlite_inspector` | Required `sqlite3_flutter_libs` | Status |
+|--------------------|--------------------------------|--------|
+| `^0.0.3`          | `^0.5.40`                      | ✅ Current |
+| `^0.0.2`          | `^0.5.40`                      | ⚠️ Update recommended |
+| `^0.0.1`          | `^0.5.40`                      | ⚠️ Update recommended |
+
+#### Verification
+
+After updating your `pubspec.yaml`, run:
+
+```bash
+flutter pub get
+flutter pub deps | grep sqlite3_flutter_libs
+```
+
+Ensure the resolved version is `0.5.40` or higher.
+
+#### Troubleshooting
+
+If you encounter Android build errors like `metadata.bin` or `NullPointerException`, see the **[Troubleshooting Guide](TROUBLESHOOTING.md)** for detailed resolution steps.
 
 ---
 
