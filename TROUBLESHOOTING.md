@@ -167,17 +167,3 @@ sqlite3_flutter_libs: 0.5.33
 - [Flutter Gradle Build Issues](https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration)
 - [sqlite_inspector GitHub Issues](https://github.com/macss-dev/sqlite_inspector/issues)
 
----
-
-## Still Having Issues?
-
-If you're still experiencing problems after following these steps:
-
-1. **Check your Gradle version**: Ensure you're using a compatible Gradle version (7.0+)
-2. **Clear all caches**: Try removing the entire `.gradle` folder and running `flutter clean` again
-3. **Update Flutter**: Ensure you're using the latest stable Flutter SDK
-4. **Report an issue**: Open an issue on [GitHub](https://github.com/macss-dev/sqlite_inspector/issues) with:
-   - Your Flutter version (`flutter --version`)
-   - Your Gradle version (from `android/gradle/wrapper/gradle-wrapper.properties`)
-   - Full error log
-   - Your `pubspec.yaml` dependencies
